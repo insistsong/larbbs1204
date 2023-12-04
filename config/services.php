@@ -18,7 +18,10 @@ return [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
         'endpoint' => env('MAILGUN_ENDPOINT', 'api.mailgun.net'),
+<<<<<<< HEAD
         'scheme' => 'https',
+=======
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
     ],
 
     'postmark' => [
@@ -31,4 +34,12 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+<<<<<<< HEAD
+=======
+    'baidu_translate' => [
+        'appid' => env('BAIDU_TRANSLATE_APPID'),
+        'key'   => env('BAIDU_TRANSLATE_KEY'),
+    ],
+
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
 ];

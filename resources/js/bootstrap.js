@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
@@ -30,3 +31,14 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     forceTLS: (import.meta.env.VITE_PUSHER_SCHEME ?? 'https') === 'https',
 //     enabledTransports: ['ws', 'wss'],
 // });
+=======
+window._ = require('lodash');
+
+try {
+
+  // 加载 jQuery
+  window.$ = window.jQuery = require('jquery');
+
+  require('bootstrap');
+} catch (e) {}
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef

@@ -3,7 +3,10 @@
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
+<<<<<<< HEAD
 use Monolog\Processor\PsrLogMessageProcessor;
+=======
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
 
 return [
 
@@ -31,10 +34,14 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'deprecations' => [
         'channel' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
         'trace' => false,
     ],
+=======
+    'deprecations' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
 
     /*
     |--------------------------------------------------------------------------
@@ -62,7 +69,10 @@ return [
             'driver' => 'single',
             'path' => storage_path('logs/laravel.log'),
             'level' => env('LOG_LEVEL', 'debug'),
+<<<<<<< HEAD
             'replace_placeholders' => true,
+=======
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
         ],
 
         'daily' => [
@@ -70,7 +80,10 @@ return [
             'path' => storage_path('logs/laravel.log'),
             'level' => env('LOG_LEVEL', 'debug'),
             'days' => 14,
+<<<<<<< HEAD
             'replace_placeholders' => true,
+=======
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
         ],
 
         'slack' => [
@@ -79,7 +92,10 @@ return [
             'username' => 'Laravel Log',
             'emoji' => ':boom:',
             'level' => env('LOG_LEVEL', 'critical'),
+<<<<<<< HEAD
             'replace_placeholders' => true,
+=======
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
         ],
 
         'papertrail' => [
@@ -91,7 +107,10 @@ return [
                 'port' => env('PAPERTRAIL_PORT'),
                 'connectionString' => 'tls://'.env('PAPERTRAIL_URL').':'.env('PAPERTRAIL_PORT'),
             ],
+<<<<<<< HEAD
             'processors' => [PsrLogMessageProcessor::class],
+=======
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
         ],
 
         'stderr' => [
@@ -102,20 +121,29 @@ return [
             'with' => [
                 'stream' => 'php://stderr',
             ],
+<<<<<<< HEAD
             'processors' => [PsrLogMessageProcessor::class],
+=======
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
         ],
 
         'syslog' => [
             'driver' => 'syslog',
             'level' => env('LOG_LEVEL', 'debug'),
+<<<<<<< HEAD
             'facility' => LOG_USER,
             'replace_placeholders' => true,
+=======
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
         ],
 
         'errorlog' => [
             'driver' => 'errorlog',
             'level' => env('LOG_LEVEL', 'debug'),
+<<<<<<< HEAD
             'replace_placeholders' => true,
+=======
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
         ],
 
         'null' => [

@@ -1,12 +1,17 @@
+<<<<<<< HEAD
 /.phpunit.cache
 /node_modules
 /public/build
+=======
+/node_modules
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
 /public/hot
 /public/storage
 /storage/*.key
 /vendor
 .env
 .env.backup
+<<<<<<< HEAD
 .env.production
 .phpunit.result.cache
 Homestead.json
@@ -15,5 +20,13 @@ auth.json
 npm-debug.log
 yarn-error.log
 /.fleet
+=======
+.phpunit.result.cache
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
 /.idea
 /.vscode

@@ -8,8 +8,15 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+<<<<<<< HEAD
      */
     public function up(): void
+=======
+     *
+     * @return void
+     */
+    public function up()
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
     {
         Schema::create('personal_access_tokens', function (Blueprint $table) {
             $table->id();
@@ -18,15 +25,25 @@ return new class extends Migration
             $table->string('token', 64)->unique();
             $table->text('abilities')->nullable();
             $table->timestamp('last_used_at')->nullable();
+<<<<<<< HEAD
             $table->timestamp('expires_at')->nullable();
+=======
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
             $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
+<<<<<<< HEAD
      */
     public function down(): void
+=======
+     *
+     * @return void
+     */
+    public function down()
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
     {
         Schema::dropIfExists('personal_access_tokens');
     }

@@ -1,6 +1,7 @@
 {
     "name": "laravel/laravel",
     "type": "project",
+<<<<<<< HEAD
     "description": "The skeleton application for the Laravel framework.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
@@ -19,13 +20,53 @@
         "nunomaduro/collision": "^7.0",
         "phpunit/phpunit": "^10.1",
         "spatie/laravel-ignition": "^2.0"
+=======
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0.2",
+        "guzzlehttp/guzzle": "^7.2",
+        "intervention/image": "^2.7",
+        "laravel/framework": "^9.2",
+        "laravel/horizon": "~5.9",
+        "laravel/sanctum": "^2.14.1",
+        "laravel/tinker": "^2.7",
+        "mews/captcha": "~3.0",
+        "mews/purifier": "~3.3",
+        "overtrue/laravel-lang": "~6.0",
+        "overtrue/pinyin": "~4.0",
+        "predis/predis": "~1.1",
+        "spatie/laravel-permission": "~5.5",
+        "summerblue/administrator": "9.*",
+        "summerblue/laravel-active": "9.*",
+        "viacreative/sudo-su": "~1.1"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "~3.6",
+        "fakerphp/faker": "^1.9.1",
+        "laravel/sail": "^1.0.1",
+        "laravel/ui": "3.4.5",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^6.1",
+        "phpunit/phpunit": "^9.5.10",
+        "spatie/laravel-ignition": "^1.0",
+        "summerblue/generator": "9.*"
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
     },
     "autoload": {
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
+<<<<<<< HEAD
         }
+=======
+        },
+        "files": [
+            "app/helpers.php"
+        ]
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
     },
     "autoload-dev": {
         "psr-4": {
@@ -55,6 +96,7 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
+<<<<<<< HEAD
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
@@ -62,5 +104,10 @@
         }
     },
     "minimum-stability": "stable",
+=======
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+>>>>>>> f3e4846e534429ffb5cf4cd373ab514cea04caef
     "prefer-stable": true
 }
